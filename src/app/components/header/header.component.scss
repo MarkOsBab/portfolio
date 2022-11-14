@@ -1,0 +1,39 @@
+@import './../../../variables.scss';
+.header{
+    background-image: url('/assets/images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 300px;
+    &__icon {
+        background-color: rgba($color: $dark, $alpha: .6);
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+        font-size: 2em;
+        fa-icon{
+            background-color: darken($color: $primary, $amount: 10);
+            border-radius: 50%;
+            padding: 6px;
+        }
+    }
+    &__content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($color: $dark, $alpha: .6);
+        h1{
+            font-family: $primary-font;
+            font-size: 5em;
+            span{
+                color: darken($color: $primary, $amount: 10);
+            }
+        }
+        p{
+            font-family: $secondary-font;
+            font-size: 2em;
+        }
+    }
+}
