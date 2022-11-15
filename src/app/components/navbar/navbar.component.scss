@@ -2,6 +2,8 @@
 .navbar{
     display: block;
     width: auto;
+    max-width: 1080px;
+    margin: 0 auto;
     &__list{
         display: flex;
         flex-direction: row;
