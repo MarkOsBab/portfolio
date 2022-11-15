@@ -32,6 +32,8 @@
                     img{
                         width: 100%;
                         max-width: 200px;
+                        pointer-events: none;
+                        user-select: none;
                     }
                 }
                 div{
@@ -56,6 +58,8 @@
                     img{
                         width: 100%;
                         max-width: 180px;
+                        pointer-events: none;
+                        user-select: none;
                     }
                     &:nth-child(3){
                         img{
