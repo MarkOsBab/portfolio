@@ -10,7 +10,6 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { KnowladgeComponent } from './pages/knowladge/knowladge.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SocialComponent } from './pages/social/social.component';
-import { ResumeComponent } from './pages/resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,7 @@ import { ResumeComponent } from './pages/resume/resume.component';
     AboutMeComponent,
     KnowladgeComponent,
     ProjectsComponent,
-    SocialComponent,
-    ResumeComponent
+    SocialComponent
   ],
   imports: [
     BrowserModule,

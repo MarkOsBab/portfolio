@@ -4,9 +4,7 @@
     margin: 0 auto;
     &__container{
         margin: 10px 0;
-        background: linear-gradient(300deg, $primary, $secondary);
-        background-size: 180% 180%;
-        animation: gradient-animation 18s ease infinite;
+        border: solid 5px $primary;
         padding: 20px 0;
         border-radius: 10px;
         h2{
@@ -96,15 +94,3 @@
         }
     }
 }
-
-@keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
