@@ -5,3 +5,22 @@ $secondary: rgb(112, 61, 183);
 
 $primary-font: 'Anybody', cursive;
 $secondary-font: 'Mukta', sans-serif;
+
+.title {
+    transform: translateX(-0.75em);
+    transition: transform 200ms;
+    &::before {
+        content: '#';
+        display: inline-block;
+        width: 0.75em;
+        color: $primary;
+        opacity: 0;
+        transition: opacity 200ms;
+    }
+    &:hover {
+        transform: none;
+    }
+    &:hover::before {
+        opacity: 1;
+    }
+}
