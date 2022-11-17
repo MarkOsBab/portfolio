@@ -24,3 +24,21 @@ $secondary-font: 'Mukta', sans-serif;
         opacity: 1;
     }
 }
+
+.btn{
+    transform: translateX(0.75em);
+    transition: transform 200ms;
+    &::after{
+        content: '->';
+        display: inline;
+        width: 0.75em;
+        opacity: 0;
+        transition: opacity 200ms;
+    }
+    &:hover{
+        transform: none;
+    }
+    &:hover::after{
+        opacity: 1;
+    }
+}

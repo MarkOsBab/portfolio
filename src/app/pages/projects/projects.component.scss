@@ -39,6 +39,21 @@
                     img{
                         width: 100%;
                         max-width: 180px;
+                        transition: transform .3s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    fa-icon{
+                        background-color: $ligth;
+                        padding: 7px;
+                        font-size: 1.6em;
+                        border-radius: 7px;
+                        color: $dark;
+                        transition: transform .3s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
                     }
                 }
                 div{

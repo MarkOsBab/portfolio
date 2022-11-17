@@ -29,6 +29,10 @@
                 justify-content: space-between;
                 align-items: center;
                 picture{
+                    transition: transform .3s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                     img{
                         width: 100%;
                         max-width: 200px;
@@ -54,6 +58,10 @@
                 flex-wrap: wrap;
                 gap: 0 60px;
                 picture{
+                    transition: transform .3s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                     margin: 10px;
                     img{
                         width: 100%;

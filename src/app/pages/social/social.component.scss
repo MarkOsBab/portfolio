@@ -30,6 +30,28 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    h2{
+                        font-family: $primary-font;
+                        font-size: 1.6em;
+                        border-bottom: 0px solid;
+                        transform-origin: 0% 50%;
+                        transition: transform 200ms;
+                        letter-spacing: 1px;
+                        &::after{
+                            content: '';
+                            margin: 3px 0;
+                            border-bottom: 2px solid $primary;
+                            display: block;
+                            transform: scaleX(0); 
+                            transition: transform 200ms;
+                        }
+                        &:hover{
+                            transform: none;
+                        }
+                        &:hover::after{
+                            transform: scaleX(1);
+                        }
+                    }
                     p{
                         font-family: $secondary-font;
                         font-size: 1.4em;
@@ -48,16 +70,31 @@
                         text-align: center;
                         text-decoration: none;
                         transition: all .3s;
-                        &::after{
-                            content: '->';
-                            display: none;
-                        }
-                        &:hover::after{
-                            display: inline;
-                        }
-                        &:hover{
-                            background-color: darken($color: $primary, $amount: 10);
-                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 1020px) {
+                &{
+                    justify-content: space-evenly;
+                    &__item{
+                        max-width: 400px;
+                    }
+                }
+            }
+            @media screen and (max-width: 817px) {
+                &{
+                    justify-content: space-evenly;
+                    &__item{
+                        max-width: 300px;
+                    }
+                }
+            }
+            @media screen and (max-width: 620px) {
+                &{
+                    flex-direction: column;
+                    &__item{
+                        margin: 10px;
+                        max-width: 100%;
                     }
                 }
             }
